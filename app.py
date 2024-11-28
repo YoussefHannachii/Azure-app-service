@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:root@localh
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-# Définir le modèle de données correspondant à ta table 'students'
+# Définir le modèle de données correspondant à ta table ' students '
 class Students(db.Model):
     __tablename__ = 'students'
 
