@@ -4,7 +4,8 @@ from sqlalchemy import func
 
 # Initialiser l'application Flask et SQLAlchemy
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://youssef:Tounes_12@minipro.mysql.database.azure.com/devopsminiprojet'  # Remplace par tes paramètres DB
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://youssef:Tounes_12@minipro.mysql.database.azure.com/devopsminiprojet'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:root@localhost/devopsminiprojet'  # Remplace par tes paramètres DB
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
