@@ -4,8 +4,8 @@ from sqlalchemy import func
 
 # Initialiser l'application Flask et SQLAlchemy
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://youssef:Tounes_12@minipro.mysql.database.azure.com/devopsminiprojet'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:root@localhost/devopsminiprojet'  # Remplace par tes paramètres DB
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://youssef:Tounes_12@minipro.mysql.database.azure.com/devopsminiprojet'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:root@localhost/devopsminiprojet'  # Remplace par tes paramètres DB
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -85,4 +85,5 @@ def search_data():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    #app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True)
